@@ -1,0 +1,90 @@
+[Event "Thames Valley"]
+[Site "?"]
+[Date "2004.11.24"]
+[Round "?"]
+[White "Jurgen Jakob (for mag), Ealing"]
+[Black "Colin Crouch, Pinner"]
+[Result "1/2-1/2"]
+[ECO "D00"]
+[Annotator "Ebbett,David"]
+[PlyCount "94"]
+
+{Over the years not many Ealing players have come away with any tangible
+reward for their efforts when facing Colin Crouch on board 1.} 1. d4 Nf6 ({
+First a little history of the Blackmar-Diemer Gambit.} 1... d5 2. e4 dxe4 3.
+Nc3 $1 {Diagram # It was Dr Ryder who first played the move 3.Nc3. Armand
+Blackmar, the American inventor of the gambit always continued 3.f3 and his
+analysis  was published in 1882. Unfortunately the counter 3...e5 has thrown a
+shadow over Blackmar's idea because Black has excellent open lines without
+material disadvantage.} ({Here's an example.} 3. f3 e5 $1 {Diagram #} 4. dxe5
+Qxd1+ 5. Kxd1 Nc6 6. Bf4 Bf5 7. Nd2 O-O-O 8. Kc1 exf3 9. Ngxf3 Nge7 10. Ng5 Ng6
+11. Nxf7 Nxf4 12. Nxh8 Nxe5 {0-1 Zube - Mercurio Ohio 1993. Black gets two
+pieces for a rook and a vastly superior position.}) 3... Nf6 4. f3 exf3 5. Qxf3
+{Diagram # This was Ryder's preferred way but 40 years later Emil Diemer
+developed the system with 5.Nf3 and it was his determined championing  that
+popularised  the gambit.}) 2. Nc3 d5 3. e4 Nxe4 {Diagram # This is the Huebsch
+Gambit.   Tim Sawyer in his excellent book on the Blackmar-Diemer Gambit says
+that the exchange of knights helps both Black and White. Black because it
+brings him one move nearer to an endgame with an extra pawn and White because
+the valuable defensive knight on f6 has disappeared.} 4. Nxe4 dxe4 5. Bc4 Nc6
+6. c3 Qd6 $1 {Diagram # This is worth an exclamation mark of approval. A major
+problem for Black in the Blackmar-Diemer Gambit is though his position appears
+sound with no pawn weaknesses, White has a long term space advantage enabling
+him to build up his attacking forces. Very often Black runs out of defensive
+resources and is overwhelmed by White's attack. The early deployment of
+Black's queen sets up a quick counterattack against White's centre and as in
+this game envisages a switch by the queen to g6 where it threatens White's
+kingside.} 7. Ne2 $146 {Looking through two million games of over-the-board
+and correspondence games I could only find three previous games with this
+sequence of moves and each of the White players continued 7.Qb3, so played now,
+the move 7.Ne2 appears to be a novelty. No doubt  in one of the BDG
+enthusiasts' clubs it has been played and analysed!} (7. Qb3 Nd8 ({RR} 7... e6
+8. Ne2 (8. Nh3 Be7 9. O-O O-O 10. Bf4 e5 11. dxe5 Qg6 12. Kh1 Bxh3 13. gxh3 Qf5
+14. Bg3 Nxe5 15. Bxe5 Qxe5 16. f3 Rad8 17. Qxb7 Rd2 18. f4 Qf5 19. Rad1 Rfd8
+20. Rxd2 Rxd2 21. Qxa7 Qxh3 {
+0-1 Pelikan,J-Chod,B/DDR-Cup corr 1989/CR97-89 (21)}) 8... Be7 9. Bf4 Qd7 10.
+O-O Na5 11. Qb5 Nxc4 12. Qxc4 Bd6 13. Rad1 O-O 14. d5 e5 15. Be3 f5 16. f4 exf3
+17. Rxf3 Qe7 18. b4 b6 19. Bf2 f4 20. Re1 Bg4 21. Rd3 e4 22. Nxf4 {
+Schnepel,T-Sprenger,J/Bad Wildbad 2000/EXT 2001/0-1 (23)}) 8. Ne2 c6 9. Bf4 Qg6
+10. a4 Qxg2 11. O-O-O Qh3 12. d5 Bd7 13. dxc6 bxc6 14. Rd2 g6 15. Rhd1 Be6 16.
+Be5 f6 17. Rxd8+ Rxd8 18. Rxd8+ Kxd8 19. Bxe6 Qf1+ 20. Kc2 Qxe2+ 21. Kb1 Qe1+
+22. Ka2 {Diagram # 1-0, Kennedy-Shipley, correspondence 1991.}) 7... e5 8. Qb3
+Qg6 9. d5 Ne7 10. Be3 {Diagram #} 10... Nf5 (10... Qxg2 11. Rg1 Qxh2 12. d6
+cxd6 13. Bxf7+ Kd8 $44 {Diagram # Inevitably Fritz prefers Black here but most
+human players would rather have the White pieces, now that Black's king is
+stuck on the semi-open queen's file.}) 11. Qb5+ Kd8 12. O-O-O Nxe3 13. fxe3 Qb6
+{Colin Crouch seeks to relieve the pressure by  exchanging queens.} 14. Qxb6
+axb6 {Diagram #} 15. d6 (15. Rhf1 f5 16. g4 {is a lively altenative. White
+would very pleased if he could gain control of the f file with his rooks and
+get his knight onto e4.}) 15... Bxd6 16. Bxf7 Bg4 17. Rde1 Rf8 18. Bc4 ({
+The immediate} 18. Bb3 {is to be preferred.}) 18... b5 19. Bb3 b4 20. Ng3 bxc3
+21. bxc3 Rf2 $17 {Diagram # With Black's king safe on d8 and a rook on the
+second rank, Black can claim the advantage. Jurgen plays very accurately over
+the next nine moves to keep himself in the game.} 22. Rhf1 $1 {
+Better than passive defence of the g pawn.} 22... Ba3+ 23. Kb1 Rb2+ 24. Ka1
+Rxg2 25. Rf7 Bb2+ 26. Kb1 Bxc3 27. Ref1 Rb2+ 28. Kc1 {Diagram #} 28... Raxa2 {
+The exchange sacrifice is the only way for Black to make progress.} 29. Bxa2
+Rxa2 30. Rxg7 Bf3 {Diagram # The players have reached the time control so the
+clocks were wound back 15 minutes for a quickplay finish.} (30... Ra1+ $2 31.
+Kc2 Rxf1 32. Rxg4 $14 {and the advantage is now with White.}) 31. Kb1 $2 (31.
+Rxh7 {is the obvious and the best move.}) 31... Rb2+ 32. Kc1 Rxh2 {"Greed is go
+od!" was the view of Michael Douglas' corporate raider in the 1987 film, Wall
+Street. It works in this position as well.} 33. Nf5 b5 $19 {Diagram # Colin
+Crouch is winning. He has too many pawns for Jurgen to cope with and his
+bishops are well dug into White's position..} 34. Rfg1 b4 $2 {
+34...Ra2 and 34...Kc8 are much better.} 35. Rf7 Rg2 36. Rxg2 Bxg2 37. Kc2 Bf1
+38. Rxh7 c5 $6 {Diagram # The problem with this move is that it cedes the d6
+square to Jurgen's knight. From now on perpetual check and/or tactical play
+against the Black king are always on the cards.} 39. Kb3 c4+ 40. Ka4 $1 {
+Diagram #} 40... Bd3 $6 (40... Be2 $1 {
+followed by b3 combines defence with attack.}) 41. Kb5 $6 (41. Nd6 $1 {
+immediately, is the correct move.}) 41... b3 (41... Ke8 {
+is Black's last winning chance.}) 42. Nd6 $1 $11 {Diagram # Suddenly Crouch is
+in trouble with Jurgen threatening 43.Kc6 and 44.Rd7 mate.} 42... Bb4 $1 (42...
+Be2 {is the only other way to get out of checkmate.} 43. Kc6 Bg4 44. Nxc4 Ke8
+45. Rb7 Bd1 46. Nd6+ Kf8 47. Kd5 {
+White could well win this position. Fritz thinks so!}) 43. Kxb4 b2 44. Rh1
+b1=Q+ 45. Rxb1 Bxb1 46. Kxc4 Ba2+ 47. Kc5 Kd7 {Diagram # Draw agreed.  This
+was a good achievement by Jurgen which greatly assisted us in winning the
+match at Pinner.} 1/2-1/2
+

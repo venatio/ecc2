@@ -1,0 +1,25 @@
+
+{% block content %}<hr>
+
+{% autoescape off %}
+
+
+	
+{% for news in news_list %}
+	<h3><a href=/newsitem/{{news.id}}>{{news.title}}</a></h3>
+	Created:{{news.create_date|date:"d M Y"}} by: {{news.author.first_name}}
+	{{news.author.last_name}}
+<br>	{{news.body}} 	<a href=/newsitem/{{news.id}}>...more</a>
+
+
+<br>
+<hr>
+			
+			
+{% endfor %}
+
+{% endautoescape %}			
+
+
+<hr>
+{% endblock %}

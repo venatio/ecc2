@@ -1,0 +1,45 @@
+[Event "home"]
+[Site "toulouse"]
+[Date ""]
+[Round "1"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[Board "a.gaa99qt"]
+[Input "DGT5611"]
+[Owner "UNREGISTERED"]
+[WhiteClock "0:10.00"]
+[BlackClock "0:10.00"]
+
+*
+
+[Event "home"]
+[Site "toulouse"]
+[Date "2008/9/17"]
+[Round "1"]
+[White "Jack_nowski"]
+[Black "Jack_Marshall"]
+[Result "0-1"]
+[Board "1"]
+[Input "DGT5611"]
+[Owner "UNREGISTERED"]
+[WhiteClock "0:09.55"]
+[BlackClock "0:10.00"]
+[Clock "W/0:06.57"]
+
+1. e4 { [%clk 0:09.54] } e5 { [%clk 0:09.56] } 2. Nf3 { [%clk 0:09.51] } Nf6 {
+[%clk 0:09.49] } 3. Nxe5 { [%clk 0:09.39] } d6 { [%clk 0:09.49] } 4. Nf3 {
+[%clk 0:09.30] } Nxe4 { [%clk 0:09.44] } 5. d4 { [%clk 0:09.23] } d5 { [%clk
+0:09.40] } 6. Bd3 { [%clk 0:09.18] } Bd6 { [%clk 0:09.35] } 7. c4 { [%clk
+0:09.10] } O-O { [%clk 0:09.32] } 8. cxd5 { [%clk 0:08.56] } Bb4+ { [%clk
+0:09.27] } 9. Kf1 { [%clk 0:08.50] } Qxd5 { [%clk 0:09.23] } 10. Qc2 { [%clk
+0:08.44] } Re8 { [%clk 0:09.19] } 11. Nc3 { [%clk 0:08.39] } Nxc3 { [%clk
+0:09.11] } 12. bxc3 { [%clk 0:08.33] } Qxf3 { [%clk 0:09.03] } 13. cxb4 {
+[%clk 0:08.23] } Nc6 { [%clk 0:08.54] } 14. Bb2 { [%clk 0:08.16] } Nxb4 {
+[%clk 0:08.49] } 15. Bxh7+ { [%clk 0:08.00] } Kh8 { [%clk 0:08.44] } 16. gxf3
+{ [%clk 0:07.53] } Nxc2 { [%clk 0:08.36] } 17. Bxc2 { [%clk 0:07.43] } Bh3+ {
+[%clk 0:08.34] } 18. Kg1 { [%clk 0:07.36] } Re2 { [%clk 0:08.14] } 19. Rc1 {
+[%clk 0:07.31] } Rae8 { [%clk 0:08.09] } 20. Bc3 { [%clk 0:07.27] } R8e3 {
+[%clk 0:07.42] } 21. Bb4 { [%clk 0:07.22] } Rxf3 { [%clk 0:07.40] } 22. Bd1 {
+[%clk 0:07.13] } Rf6 { [%clk 0:07.40] } 0-1
+

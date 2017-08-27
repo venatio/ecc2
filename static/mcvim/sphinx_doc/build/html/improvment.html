@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Améliorations : &mdash; MCVim v1.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/mcvim.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+          URL_ROOT:    '',
+          VERSION:     '1.0.1',
+          COLLAPSE_MODINDEX: false,
+          FILE_SUFFIX: '.html'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/interface.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="contents" title="Global table of contents" href="contents.html" />
+    <link rel="index" title="Global index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="MCVim v1.0.1 documentation" href="index.html" />
+    <link rel="next" title="MCVim&#8217;s exemples" href="samples/index.html" />
+    <link rel="prev" title="Pourquoi MCVim" href="presentation.html" />
+  </head>
+  <body>
+    <div class="document">
+	<div id="header">
+	  <h1>MCVim <br/><br/>MyChessViewer<br/> <br/>improved</h1>
+  	</div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="samples/index.html" title="MCVim&#8217;s exemples"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="presentation.html" title="Pourquoi MCVim"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">MCVim v1.0.1 documentation</a> &raquo;</li>
+      </ul>
+    </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  
+  <div class="section">
+<h1 id="am-liorations"><span id="index-20"></span>Améliorations :<a class="headerlink" href="#am-liorations" title="Permalink to this headline">¶</a></h1>
+<p>Les améliorations portées vont de la correction de bugs mineurs, à l&#8217;internationalisation, la personnalisation graphique et de nouvelles options de visualisation.</p>
+<div class="section">
+<h2 id="corrections-de-bugs">Corrections de bugs<a class="headerlink" href="#corrections-de-bugs" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Modification du parseur pour qu&#8217;il lise les pgn qui contiennent des tags de temps</p>
+<div class="highlight"><pre>35. Kh2 <span class="o">{</span> <span class="o">[</span>%clk 0:07.39<span class="o">]</span> <span class="o">}</span> Bb3 <span class="o">{</span> <span class="o">[</span>%clk 0:05.46<span class="o">]</span> <span class="o">}</span>
+</pre></div>
+</li>
+</ul>
+<blockquote>
+Le parseur plantait si une ligne dans le bloc de coup commençait par &#8216;[&#8216;.</blockquote>
+<ul class="simple">
+<li>Affichage de commentaire avant le premier coup</li>
+</ul>
+<blockquote>
+Si une partie contenait un commentaire au premier coup, ce dernier s&#8217;affichait sytématiquement au premier coup des autres parties, y compris si elle n&#8217;en avaient pas.</blockquote>
+<ul class="simple">
+<li>Code non atteignable, imports inutiles, variables inutilisées.</li>
+</ul>
+</div>
+<div class="section">
+<h2 id="affichage-du-temps">Affichage du temps<a class="headerlink" href="#affichage-du-temps" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<p>Le temps affiché est uniquement (pour l&#8217;instant) celui contenu dans les commentaires comme indiqué au dessus.</p>
+<p>Le tag est extrait du commentaire, et il est possible d&#8217;avoir du commentaire avant et ou après le tag.</p>
+<div class="highlight"><pre>35. Kh2 <span class="o">{</span> texte avant <span class="o">[</span>%clk 0:07.39<span class="o">]</span> texte après <span class="o">}</span> Bb3 <span class="o">{</span> <span class="o">[</span>%clk 0:05.46<span class="o">]</span> <span class="o">}</span>
+</pre></div>
+</blockquote>
+</div>
+<div class="section">
+<h2 id="meilleure-navigation">Meilleure navigation<a class="headerlink" href="#meilleure-navigation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Un double-click pour retourner l&#8217;échiquier</li>
+<li>navigation via les flèches du clavier:</li>
+</ul>
+<blockquote>
+<p>Il vous faut ici remercier Jacques Bouthier Président de la <a class="reference" href="http://lmpe.org/">L.M.P.E.</a> . C&#8217;est lui qui m&#8217; a obligé à implémenter cette fontionalité !
+Il ne supporte pas d&#8217;avoir à effectuer le moindre click entre la liste des parties et l&#8217;activation des flèches :D</p>
+<ul class="simple">
+<li>Flèche haut : partie précédente.</li>
+<li>Flèche bas : partie suivante.</li>
+<li>Flèche droite : coup suivant.</li>
+<li>Flèche gauche : coup précédent.</li>
+<li>Page haut : aller au premier coup.</li>
+<li>Page bas : aller au dernier coup.</li>
+</ul>
+</blockquote>
+</div>
+<div class="section">
+<h2 id="internationalisation">Internationalisation<a class="headerlink" href="#internationalisation" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<p>L&#8217;applet est complètement internationalisée : <a class="reference" href="http://code.google.com/p/mcvim/source/browse/trunk/i18n/MessagesBundle_fr_FR.properties">traduction fr_FR</a></p>
+<ul class="simple">
+<li>messages et libéllés des boutons.</li>
+<li>coups sur la feuille de notation</li>
+<li>les 139 <a class="reference" href="http://fr.wikipedia.org/wiki/Portable_Game_Notation#NAG">NAG</a> sont traduits</li>
+</ul>
+<blockquote>
+<div class="highlight"><pre>28. Kxf7 <span class="o">{</span> un sacrifice qui met les noirs en dificulté <span class="o">}</span> <span class="nv">$1</span>
+affichera :
+<span class="s2">&quot;!&quot;</span> bon coup un sacrifice qui met les noirs en dificulté
+</pre></div>
+</blockquote>
+</blockquote>
+</div>
+<div class="section">
+<h2 id="skining">Skining<a class="headerlink" href="#skining" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<p>L&#8217;applet d&#8217;origine ne permettait de modifier l&#8217;apparence que via 3 paramètres :</p>
+<div class="highlight"><pre><span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">lightSquares</span> <span class="na">value=</span><span class="s">&quot;FFFBF1&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">darkSquares</span>  <span class="na">value=</span><span class="s">&quot;4666A4&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">background</span>   <span class="na">value=</span><span class="s">&quot;330066&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+<p>Tout le reste, notamment les polices (nom, style, taille et couleur) était codé en dur !</p>
+<p>Les paramètres obligaient le webmaster à les spécifier sur toutes les pages.
+Ils ont été supprimés, et dorénavant tout est configurable dans le fichier <a class="reference" href="http://code.google.com/p/mcvim/source/browse/trunk/config.cfg">config.cfg</a></p>
+</blockquote>
+</div>
+<div class="section">
+<h2 id="nouveaux-modes-de-visualisation">Nouveaux modes de visualisation<a class="headerlink" href="#nouveaux-modes-de-visualisation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Le mode puzzlemode a été supprimé.</li>
+</ul>
+<blockquote>
+<div class="highlight"><pre><span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">puzzlemode</span> <span class="na">value=</span><span class="s">&quot;off&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+<p>il est remplacé par deux nouveaux modes :</p>
+<ul class="simple">
+<li>mode problem</li>
+</ul>
+<blockquote>
+<p>il permet de présenter le pgn sans possibilité de navigation, et sans afficher la suite de coups. C&#8217;est utile pour présenter une position comme un problème à résoudre sans pour autant modifier le pgn initial.</p>
+<dl class="docutils">
+<dt>Il est inactif par défaut. Pour l&#8217;activer :</dt>
+<dd><div class="highlight"><pre><span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">problem</span> <span class="na">value=</span><span class="s">&quot;on&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</dd>
+</dl>
+</blockquote>
+<ul class="simple">
+<li>mode training</li>
+</ul>
+<blockquote>
+<p>il permet de découvrir les coups un par un sans afficher la suite, ou la totalité de la variante contrairement à l&#8217;ancien puzzlemode.</p>
+<dl class="docutils">
+<dt>Il est inactif par défaut. Pour l&#8217;activer :</dt>
+<dd><div class="highlight"><pre><span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">training</span> <span class="na">value=</span><span class="s">&quot;on&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</dd>
+</dl>
+</blockquote>
+</blockquote>
+<ul class="simple">
+<li>Deux modes &#8220;Live&#8221;</li>
+</ul>
+<blockquote>
+<ul class="simple">
+<li>un mode similaire à l&#8217;applet d&#8217;origine</li>
+</ul>
+<blockquote>
+<p>Il ne rafraîchit que la liste des coups. Il permet de naviguer dans la partie, durant l&#8217;actualisation des coups.
+Ce mode est idéal pour les parties à cadence longue.
+Le webmaster qui veut proposer ce comportement par défaut ajoutera donc le code suivant à la page html :</p>
+<div class="highlight"><pre><span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;refreshInterval&quot;</span> <span class="na">value=</span><span class="s">1</span><span class="nt">&gt;</span>
+<span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;refreshOnlySheetMoves&quot;</span>  <span class="na">value=</span><span class="s">&quot;on&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+</blockquote>
+<ul class="simple">
+<li>Un mode &#8220;Full Live&#8221;</li>
+</ul>
+<blockquote>
+<p>Ce dernier actualise automatiquement la position et le temps chaque fois qu&#8217;un coup est joué. Il est idéal pour les retransmissions de parties rapides.</p>
+<p>Pour proposer ce comportement par défaut il suffit d&#8217;activer &#8220;RefreshIntervall&#8221; :</p>
+<div class="highlight"><pre><span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;refreshInterval&quot;</span> <span class="na">value=</span><span class="s">1</span><span class="nt">&gt;</span>
+</pre></div>
+</blockquote>
+</blockquote>
+<ul class="simple">
+<li>Un option pour passer d&#8217;un mode à l&#8217;autre !</li>
+</ul>
+<blockquote>
+<p>Le comportement &#8220;Live&#8221; initial est choisi par le webmaster.</p>
+<p><img alt="live" src="_images/switch_live.jpg" /></p>
+<p><strong>Le bouton option permet à l&#8217;utilisateur de basculer d&#8217;un mode à l&#8217;autre quand il le désire.</strong>
+<img alt="old_live" src="_images/switch_old_live.jpg" /></p>
+</blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3>Table Of Contents</h3>
+            <ul>
+<li><a class="reference" href="">Améliorations :</a><ul>
+<li><a class="reference" href="#corrections-de-bugs">Corrections de bugs</a></li>
+<li><a class="reference" href="#affichage-du-temps">Affichage du temps</a></li>
+<li><a class="reference" href="#meilleure-navigation">Meilleure navigation</a></li>
+<li><a class="reference" href="#internationalisation">Internationalisation</a></li>
+<li><a class="reference" href="#skining">Skining</a></li>
+<li><a class="reference" href="#nouveaux-modes-de-visualisation">Nouveaux modes de visualisation</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="presentation.html" title="previous chapter">Pourquoi MCVim</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="samples/index.html" title="next chapter">MCVim&#8217;s exemples</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/improvment.txt">Show Source</a></li>
+            </ul>
+            <h3>Quick search</h3>
+            <form class="search" action="search.html" method="get">
+              <input type="text" name="q" size="18" /> <input type="submit" value="Go" />
+              <input type="hidden" name="check_keywords" value="yes" />
+              <input type="hidden" name="area" value="default" />
+            </form>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="samples/index.html" title="MCVim&#8217;s exemples"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="presentation.html" title="Pourquoi MCVim"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">MCVim v1.0.1 documentation</a> &raquo;</li>
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2008, Jean-Philippe Camguilhem.
+      Last updated on 19 September, 2008.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    </div> 
+
+    </div>
+
+ </body>
+</html>

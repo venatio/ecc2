@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}<hr>
+<script language="JavaScript">
+function DisplayMail(Server, Login, Display){
+if ((Display.length == 0) || (Display.indexOf('@')+1)) {
+document.write("<a href=" + "'mai" + "lto:" + Login + "@" + Server + "'>" + Login + "@" + Server + "</a>"); }
+else {
+document.write("<a href="+ "'mai" + "lto:" + Login + "@" + Server + "'>" + Display + "</a>"); }
+}
+</script>
+
+
+<h1>Club Contacts:</H1>
+{% for contact in contact_list %}
+	<h3>{{contact.role}}</h3>
+		
+	<b>	{{contact.name}}</b><br>
+	tel: {{contact.telephone}}<br>
+	Mobile {{contact.mobile}}<br>
+	email <A HREF="mailto:{{contact.email}}">{{contact.email}}</A>
+<br><br>
+<hr>
+			
+			
+{% endfor %}
+
+
+
+<hr>
+{% endblock %}

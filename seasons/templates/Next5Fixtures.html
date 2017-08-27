@@ -1,0 +1,15 @@
+
+{% block content %}
+<body>
+
+
+<p>
+<table border =1>
+<tr><td><b>Team</b></td><td><b>Date</b></td><td><b>Time</b></td><td><b>Opponent</b></td><td><b>Venue</b></td></tr>
+{% for fixture in fixture_list %}
+	<tr><td>{{ fixture.campaign.team.league.code}}{{ fixture.campaign.team.number}}</td><td>{{ fixture.date|date:"D d M"}}</td><td>{{ fixture.date|time:"H:i"}}</td><td>{{ fixture.opponent_club}}  '{{fixture.opponent_team }}'</td><td>({{fixture.venue }})</td></tr> 
+{% endfor %}
+
+</table>
+</body>
+{% endblock %}

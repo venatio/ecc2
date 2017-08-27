@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}<hr>
+
+{% autoescape off %}
+
+<h1>Club News:</H1>
+<hr>
+	<div class="pagination_top">
+	    <span class="step-links">
+	        {% if entry.has_previous %}
+	            <a href="?page={{ entry.previous_page_number }}">previous</a>
+	        {% endif %}
+
+	        <span class="current">
+	            Page {{ entry.number }} of {{ entry.paginator.num_pages }}.
+	        </span>
+
+	        {% if entry.has_next %}
+	            <a href="?page={{ entry.next_page_number }}">next</a>
+	        {% endif %}
+	    </span>
+	</div>
+<hr>	
+	
+{% for entry in entry.object_list %}
+<br>	<h3><a href=/newsitem/{{entry.id}}>{{entry.title}}</a></h3>
+	Created:{{entry.create_date|date:"d M Y"}} by: 
+	{{entry.author.first_name}} 
+	{{entry.author.last_name}}
+	
+	{{entry.body}} 	<a href=/newsitem/{{entry.id}}>..more</a>
+<br>
+
+
+<hr>
+			
+			
+{% endfor %}
+
+<div class="pagination_bottom">
+    <span class="step-links">
+        {% if entry.has_previous %}
+            <a href="?page={{ entry.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ entry.number }} of {{ entry.paginator.num_pages }}.
+        </span>
+
+        {% if entry.has_next %}
+            <a href="?page={{ entry.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+
+{% endautoescape %}			
+
+
+<hr>
+{% endblock %}

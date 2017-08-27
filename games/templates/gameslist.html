@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}<hr>
+
+<h1>Games for Viewing :</H1>
+    <br>
+ <table border =1>
+<tr><td>Event</td><td>Players</td><td>Results</td><td>Description</td></tr>
+	{% for game in games_list %}
+	<tr>
+        <td>{{game.year}} {{game.event}} </td>
+        <td><a href=/games/{{game.id}}> {{ game.white}} v {{ game.black}} </td>
+        <td><a href=/games/{{game.id}}>{{game.result}}</td>
+        <td><a href=/games/{{game.id}}>{{game.game_description}}</td>
+    </tr> 
+	{% endfor %}
+
+</table>	
+{% endblock %}

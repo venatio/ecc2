@@ -1,0 +1,18 @@
+ extends "base.html" 
+{% block content %}<hr>
+
+{% autoescape off %}
+
+<h2>{{newsitem.title}}</H2>: Created:{{newsitem.create_date|date:"d M Y"}} 
+, by {{newsitem.author.first_name}} {{newsitem.author.last_name}} 
+
+
+<br>
+<br>
+{{newsitem.body}}
+<p>
+{{newsitem.extended}}	
+{% endautoescape %}			
+
+<hr>
+{% endblock %}

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- this template was designed by http://www.tristarwebdesign.co.uk - please visit for more templates & information - thank you. -->
+
+<head>
+
+<title>Welcome to Ealing Chess Club Online!</title> <!-- change to whatever you want as the title for your website -->
+<meta name="description" content=" " /> <!-- enter a description for your website inside the " " -->
+<meta name="keywords" content=" " /> <!-- enter a string of keywords that relate to your website inside the " " -->
+<meta http-equiv="Content-Language" content="en-gb" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+
+<link rel="stylesheet" type="text/css" href="/site_media_dir/css/style.css" />
+
+</head>
+
+<body>
+
+<div id="topCont">
+	<div id="top">
+		<div id="topleft"></p></div>
+		<div id="topright"><p><i>"Those who say they understand chess, understand nothing"
+-- Robert HUBNER</i></p></div>
+	</div>
+	<div id="header">
+		<div id="headerleft">
+		<img alt="" src="/site_media_dir/images/chess.jpg" <a title="skip to content" href="#mainCont"></a></div>
+		<div id="headerright">
+			<h1>Ealing Chess Club</h1>
+			<h2>Est. 1885</h2>
+		</div>
+	</div>
+</div>
+
+<div id="mainCont">
+	<div id="main">
+		<div id="mainmenu">
+			<ul>
+				<li><a class="active" title="home" href="/">Home</a></li>
+				<li><a title="link one" href="/about">About The Club</a></li>
+				<li><a title="link two" href="/news">News</a>
+					
+					</li>
+				<li><a title="link three" href="/events">Club Events</a></li>
+				<li><a title="link four" href="/fixturelist">Fixtures + Results</a></li>
+				<li><a title="link six" href="/links">Chess Links</a></li>
+				<li><a title="link seven" href="/gameslist">Games Viewer</a></li>
+				<li><a title="link eight" href="/puzzles">Daily Puzzle</a></li>	
+				<li><a title="link nine" href="/contacts">Club Contacts</a></li>				
+                                <hr>
+				<li><a title="link ten" href="http://www.facebook.com/ealingchess">Facebook Page</a></li>
+                                <li><a title="link eleven" href="http://www.ealingjuniorchessclub.co.uk">Ealing Juniors Page</a></li>
+
+			</ul><hr>
+
+			<div id="fix">
+			{% load tags %}
+			<p><h2>Last 5 Results</h2></p>
+			<p>last5results </p>
+			<p><h2>Next 5 fixtures</h2></p>
+				next5fixtures 
+			</div>
+			
+
+		</div>
+		<div id="maincontent">
+{% block content %}{% endblock %}
+
+		</div>
+		<div class="bottom"></div>
+	</div>
+</div>
+
+<div id="footerCont">
+	<div id="footer">
+		<div id="footerleft">
+			<p><a title="back to top" href="#topCont">Back to Top ^</a></p>
+		</div>
+		<div id="footerright">
+			<p>layout design by <a title="derby web design" href="http://www.tristarwebdesign.co.uk">tristar web design</a></p>
+			<p>coding design by <a title="app design" href="http://www.venatio.co.uk">Venatio Ltd</a></p>		</div>
+		<div class="bottom"></div>
+	</div>
+</div>
+
+<!-- Google Analytics -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-16312075-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+
+</html>
+	
+

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Match Result</H1>
+<hr>
+<table border =1>      
+	<tr><td><b>Season</b></td>		<td>{{ fixture.campaign.season.name }}</td></tr>
+	<tr><td><b>Date</b></td>		<td>{{ fixture.date|date:"D d M Y"}}</td></tr>
+	<tr><td><b>Competition:</b></td><td>{{fixture.campaign.team.league.name}} League Division {{fixture.campaign.division}}</td></tr>
+	<tr><td><b>Fixture<b></td>		<td>{% ifequal fixture.venue 'H' %}
+    										{{fixture.campaign.team.name}} '{{ fixture.campaign.team.letter}}' v {{ fixture.opponent_club }} '{{ fixture.opponent_team }}'
+										{% else %}
+											{{ fixture.opponent_club }} '{{ fixture.opponent_team }}' v {{fixture.campaign.team.name}} '{{ fixture.campaign.team.letter}}' 
+										{% endifequal %}</td></tr>
+	<tr><td><b>Result</b></td>		<td>{{ fixture.match_result}}: {{ fixture.our_score|floatformat}}-{{ fixture.their_score|floatformat}}</td></tr>
+</table>
+<hr>
+
+<h2>Scorecard</h2>
+<br>
+{% ifequal fixture.venue 'H' %}
+	<table border =1>
+	<tr><td><b>Board</b></td><td><b>Grade</b></td><td><b>{{fixture.campaign.team.name}} '{{ fixture.campaign.team.letter}}'</b></td><td><b><center>v</center></b></td><td><b>{{ fixture.opponent_club }} '{{ fixture.opponent_team }}'</b></td><td><b>Grade</b></th></tr>
+	{% for result in result_list %}
+		<tr><td>{{ result.board}}</td>
+			<td>{{ result.our_player.gradelist.grade_set }}
+
+
+
+
+			{% for gradep in result.our_player.gradelist.all %}
+
+				
+
+				{% endfor %}</td>
+
+
+
+
+
+
+			<td>{{ result.our_player.first_name }} {{ result.our_player.last_name }}</td>
+			<td><center>{{ result.boardresult.homedisplay}}</center></td>
+			<td>{{result.opponent_name }}</td>
+			<td>{{result.opponent_grade }} </td></tr> 
+	{% endfor %}
+<tr><td><b>Total</b></td><td><b></b></td><td><b></b></td><td><b><center>{{fixture.our_score|floatformat}}-{{fixture.their_score|floatformat}}</center></b></td><td><b></b></td><td><b></b></th></tr>
+	</table>
+	
+
+{% else %}
+	<table border =1>
+	<tr><td><b>Board</b></td><td><b>Grade</b></td><td><b>{{ fixture.opponent_club }} '{{ fixture.opponent_team }}'</b></td><td><b><center>v</center></b></td><td><b>{{fixture.campaign.team.name}} '{{ fixture.campaign.team.letter}}'</b></td><td><b>Grade</b></th></tr>
+	{% for result in result_list %}
+		<tr><td>{{ result.board}}</td><td>{{result.opponent_grade }}</td><td>{{result.opponent_name }}</td><td><center>{{ result.boardresult.awaydisplay}}</center></td><td>{{ result.our_player.first_name }} {{ result.our_player.last_name }}</td><td>
+		
+		{{ result.our_player.gradelist.grade.all }}
+		
+ </td></tr> 
+{% endfor %}
+<tr><td><b>Total</b></td><td><b></b></td><td><b></b></td><td><b><center>{{fixture.their_score|floatformat}}-{{fixture.our_score|floatformat}}</center></b></td><td><b></b></td><td><b></b></th></tr>
+	</table>
+
+{% endifequal %}
+<br>
+<h2>Captains Comment</h2>
+{% autoescape off %}
+
+<br>
+{% if fixture.captains_comment  %}
+	{{ fixture.captains_comment }}
+{% endif %}
+<br>
+{% endautoescape %}
+
+{% endblock %}
+
